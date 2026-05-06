@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hoja de Vida | Anyi</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- SECCION: FONDO DECORATIVO -->
+	<div class="page-bg"></div>
+	<div class="page-overlay"></div>
+
+	<!-- SECCION: ENCABEZADO PRINCIPAL -->
+	<header class="site-header">
+		<a class="brand" href="#inicio" aria-label="Inicio">
+			<span class="brand-mark">&lt;AG/&gt;</span>
+		</a>
+
+		<nav class="top-nav" aria-label="Navegacion principal">
+			<a href="#sobre-mi">Sobre mi</a>
+			<a href="#experiencia">Experiencia</a>
+			<a href="#proyectos">Proyectos</a>
+			<a href="#recomendaciones">Recomendaciones</a>
+			<a href="#educacion">Educacion</a>
+		</nav>
+
+		<div class="top-actions" aria-label="Opciones">
+			<button class="chip" type="button">EN</button>
+			<button class="chip chip-icon" type="button" aria-label="Modo oscuro">&#9681;</button>
+		</div>
+	</header>
+
+	<!-- SECCION: CONTENIDO PRINCIPAL -->
+	<main id="inicio">
+		<!-- SECCION: PORTADA / HERO -->
+		<section class="hero">
+			<img
+				class="profile-image"
+				src="assets/images/Imagen.png"
+				alt="Foto de perfil">
+
+			<h1>Anyi Paola Domínguez Agudelo</h1>
+			<p class="job-title">Profesional en Desarrollo Familiar</p>
+			<p class="tagline">Amante de la intervención ética, los hogares que crecen y el acompañamiento que deja huella.</p>
+
+			<div class="hero-actions">
+				<a class="btn-download" href="#" role="button">Descargar CV</a>
+				<a class="btn-social" href="#" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+				<a class="btn-social" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</section>
+
+		<!-- SECCION: SOBRE MI -->
+		<section id="sobre-mi" class="about-section" aria-label="Seccion sobre mi">
+			<div class="about-stats">
+				<article class="stat-card">
+					<h3>5+</h3>
+					<p>Anos de exp.</p>
+				</article>
+				<article class="stat-card">
+					<h3>10+</h3>
+					<p>Proyectos</p>
+				</article>
+				<article class="stat-card">
+					<h3>5</h3>
+					<p>Equipos liderados</p>
+				</article>
+			</div>
+
+			<div class="about-grid">
+				<article class="about-card who-card">
+					<h2>Perfil profesional</h2>
+					<p>
+						Profesional en Desarrollo Familiar, especialista en Gerencia de Proyectos,
+						con experiencia en intervencion psicosocial, trabajo con familias y comunidades, y coordinacion
+						de equipos interdisciplinarios en contextos educativos, comunitarios y de salud. Cuento con
+						enfoque diferencial, territorial y de derechos para disenar estrategias de atencion orientadas al
+						bienestar familiar, la salud mental y la mejora de la calidad de vida.
+					</p>
+
+					<ul class="about-highlights">
+						<li>Formulacion, ejecucion y evaluacion de proyectos sociales y comunitarios</li>
+						<li>Coordinacion de equipos de salud y articulacion interinstitucional</li>
+						<li>Investigacion social, informes tecnicos y sistematizacion de experiencias</li>
+					</ul>
+				</article>
+
+				<article class="about-card info-card">
+					<h2>Informacion basica</h2>
+					<ul class="info-list">
+						<li><i class="bi bi-person-badge-fill info-icon" aria-hidden="true"></i><span>Nombre</span><strong>Anyi Paola Domínguez Agudelo</strong></li>
+						<li><i class="bi bi-geo-alt-fill info-icon" aria-hidden="true"></i><span>Pais</span><strong>Colombia</strong></li>
+						<li><i class="bi bi-envelope-fill info-icon" aria-hidden="true"></i><span>Email</span><strong>anyipaoagu16@gmail.com</strong></li>
+						<li><i class="bi bi-telephone-fill info-icon" aria-hidden="true"></i><span>Telefono</span><strong>+57 3226986997</strong></li>
+						<li><i class="bi bi-translate info-icon" aria-hidden="true"></i><span>Idiomas</span><strong>Español, Ingles (nivel intermedio)</strong></li>
+					</ul>
+
+					<div class="info-footer">
+						<div class="info-socials" aria-label="Redes sociales">
+							<a href="#" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+							<a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+							<a href="#" aria-label="Email"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+						</div>
+						<a class="btn-download compact" href="#" role="button">Descargar CV</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- SECCION: EXPERIENCIA 
+		<section id="experiencia" class="experience-section" aria-label="Seccion experiencia laboral">
+			<h2 class="section-title">Experiencia Laboral</h2>
+
+			<div class="experience-shell">
+				<div class="experience-rail" aria-hidden="true">
+					<div class="rail-dot">BK</div>
+				</div>
+
+				<div class="experience-card">
+					<header class="experience-company">
+						<h3>Banco Davivienda</h3>
+						<p>5 anos 1 mes</p>
+					</header>
+
+					<article class="experience-role">
+						<div class="role-head">
+							<h4>Especialista I - Arquitecturas Agiles</h4>
+							<span>Abr 2025 - Presente - 1 ano</span>
+						</div>
+						<p>
+							Liderazgo integral (tecnico y de negocio) de equipos agiles para evolucionar el canal digital
+							principal del banco. Definicion y ejecucion de soluciones distribuidas en AWS con building
+							blocks reutilizables (APIs REST/GraphQL, cache en Redis y microservicios en Spring Boot con Kotlin).
+						</p>
+						<ul class="tech-list" aria-label="Tecnologias usadas en este cargo">
+							<li>Angular</li>
+							<li>React Native</li>
+							<li>Spring Boot</li>
+							<li>Kotlin</li>
+							<li>AWS</li>
+							<li>Redis</li>
+							<li>GraphQL</li>
+							<li>Jira</li>
+						</ul>
+					</article>
+
+					<article class="experience-role">
+						<div class="role-head">
+							<h4>Profesional III - Arquitecturas Agiles</h4>
+							<span>May 2023 - Abr 2025 - 2 anos</span>
+						</div>
+						<p>
+							Liderazgo de equipos agiles para implementacion de software concurrente sobre AWS. Arquitecturas
+							de microservicios y microfrontends con Angular, Quarkus y NestJS. Gestion de proyectos con Jira
+							bajo Scrum.
+						</p>
+						<ul class="tech-list" aria-label="Tecnologias usadas en este cargo">
+							<li>Angular</li>
+							<li>NestJS</li>
+							<li>Quarkus</li>
+							<li>AWS</li>
+							<li>Jira</li>
+							<li>Scrum</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- SECCION: CERTIFICACIONES -->
+		<section id="certificaciones" class="certifications-section" aria-label="Seccion certificaciones">
+			<h2 class="section-title">Certificaciones y Cursos</h2>
+			<p class="section-subtitle">Aqui se muestran cursos y certificados.</p>
+
+			<div class="carousel certifications-carousel">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-1" checked>
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-2">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-3">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-4">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-5">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-6">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-7">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-8">
+				<input class="carousel-toggle" type="radio" name="certifications-carousel" id="certifications-slide-9">
+
+				<div class="carousel-stage">
+					<div class="carousel-track">
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-1" aria-label="Ver certificado Justicia Juvenil Restaurativa en grande">
+									<img src="assets/images/Diplomado1.png" alt="Certificado Diplomado 1">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Diplomado</p>
+								<h3>Justicia Juvenil Restaurativa</h3>
+								<span>2024</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-2" aria-label="Ver certificado Gestion del Talento Humano en grande">
+									<img src="assets/images/Diplomado2.png" alt="Certificado Diplomado 2">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Diplomado</p>
+								<h3>Gestion del Talento Humano</h3>
+								<span>2024</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-3" aria-label="Ver certificado Diplomado 3 en grande">
+									<img src="assets/images/Diplomado3.png" alt="Certificado Diplomado 3">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Diplomado</p>
+								<h3>Formacion de Promotores y Promotoras para la Corresponsabilidad y Equidad entre los Generos</h3>
+								<span>2024</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-4" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado.png" alt="Certificado">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Formulacion de Proyectos de Desarrollo</h3>
+								<span>2023</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-5" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado1.png" alt="Certificado 1">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Construccion de Paz y Derechos Humanos</h3>
+								<span>2023</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-6" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado2.png" alt="Certificado 2">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Me Cuido Activo</h3>
+								<span>2023</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-7" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado3.png" alt="Certificado 3">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Gestion de Conflictos</h3>
+								<span>2023</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-8" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado4.png" alt="Certificado 4">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Gestion Integral del Servicio al Ciudadano</h3>
+								<span>2020</span>
+							</div>
+						</article>
+
+						<article class="certificate-card carousel-card">
+							<div class="certificate-preview">
+								<a class="certificate-zoom" href="#cert-modal-9" aria-label="Ver certificado en grande">
+									<img src="assets/images/Certificado5.png" alt="Certificado 5">
+								</a>
+							</div>
+							<div class="certificate-body">
+								<p class="certificate-platform">Curso / Diplomado</p>
+								<h3>Habilidades para la Vida</h3>
+								<span>2020</span>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="carousel-arrows" aria-label="Controles del carrusel de certificaciones">
+					<div class="arrow-set arrow-set-1">
+						<label for="certifications-slide-5" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-2" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-2">
+						<label for="certifications-slide-1" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-3" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-3">
+						<label for="certifications-slide-2" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-4" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-4">
+						<label for="certifications-slide-3" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-5" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-5">
+						<label for="certifications-slide-4" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-6" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-6">
+						<label for="certifications-slide-5" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-7" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-7">
+						<label for="certifications-slide-6" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-8" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-8">
+						<label for="certifications-slide-7" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-9" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+					<div class="arrow-set arrow-set-9">
+						<label for="certifications-slide-8" class="carousel-arrow" aria-label="Certificado anterior">&#8249;</label>
+						<label for="certifications-slide-1" class="carousel-arrow" aria-label="Certificado siguiente">&#8250;</label>
+					</div>
+				</div>
+
+				<div class="carousel-dots" aria-label="Paginacion del carrusel de certificaciones">
+					<label for="certifications-slide-1" class="carousel-dot"><span class="sr-only">Certificado 1</span></label>
+					<label for="certifications-slide-2" class="carousel-dot"><span class="sr-only">Certificado 2</span></label>
+					<label for="certifications-slide-3" class="carousel-dot"><span class="sr-only">Certificado 3</span></label>
+					<label for="certifications-slide-4" class="carousel-dot"><span class="sr-only">Certificado 4</span></label>
+					<label for="certifications-slide-5" class="carousel-dot"><span class="sr-only">Certificado 5</span></label>
+					<label for="certifications-slide-6" class="carousel-dot"><span class="sr-only">Certificado 6</span></label>
+					<label for="certifications-slide-7" class="carousel-dot"><span class="sr-only">Certificado 7</span></label>
+					<label for="certifications-slide-8" class="carousel-dot"><span class="sr-only">Certificado 8</span></label>
+					<label for="certifications-slide-9" class="carousel-dot"><span class="sr-only">Certificado 9</span></label>
+				</div>
+			</div>
+
+			<div class="certificate-modals" aria-hidden="true">
+				<aside id="cert-modal-1" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Diplomado1.png" alt="Certificado Diplomado 1 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-2" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Diplomado2.png" alt="Certificado Diplomado 2 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-3" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Diplomado3.png" alt="Certificado Diplomado 3 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-4" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado.png" alt="Certificado ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-5" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado1.png" alt="Certificado 1 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-6" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado2.png" alt="Certificado 2 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-7" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado3.png" alt="Certificado 3 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-8" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado4.png" alt="Certificado 4 ampliado">
+					</div>
+				</aside>
+
+				<aside id="cert-modal-9" class="cert-modal">
+					<a href="#certificaciones" class="cert-modal-backdrop" aria-label="Cerrar vista ampliada"></a>
+					<div class="cert-modal-content">
+						<a href="#certificaciones" class="cert-modal-close" aria-label="Cerrar">&times;</a>
+						<img src="assets/images/Certificado5.png" alt="Certificado 5 ampliado">
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<!-- SECCION: EDUCACION -->
+		<section id="educacion" class="education-section" aria-label="Seccion educacion">
+			<h2 class="section-title">Educacion</h2>
+
+			<div class="education-shell">
+				<div class="education-rail" aria-hidden="true">
+					<div class="edu-dot">EST</div>
+					<div class="edu-dot">COM</div>
+				</div>
+
+				<div class="education-list">
+					<article class="education-card">
+						<h3>Estudios principales</h3>
+						<ul class="edu-main-list" aria-label="Estudios principales">
+							<li>
+								<p class="edu-years">2025</p>
+								<p class="edu-level">Posgrado</p>
+								<p class="edu-title">Especialista en Gerencia de Proyectos</p>
+								<p class="edu-institution">Uniminuto</p>
+							</li>
+							<li>
+								<p class="edu-years">2024</p>
+								<p class="edu-level">Profesional</p>
+								<p class="edu-title">Profesional en Desarrollo Familiar</p>
+								<p class="edu-institution">Universidad de Caldas</p>
+							</li>
+							<li>
+								<p class="edu-years">2017</p>
+								<p class="edu-level">Bachiller academico</p>
+								<p class="edu-title">Bachiller Academico con enfasis en pedagogia</p>
+								<p class="edu-institution">Escuela Normal Superior de la Presentacion</p>
+							</li>
+						</ul>
+					</article>
+
+					<article class="education-card">
+						<h3>Formacion complementaria</h3>
+						<div class="edu-accordion" aria-label="Formacion complementaria por ano">
+							<details class="edu-group" open>
+								<summary>2024 - 3 formaciones</summary>
+								<ul>
+									<li>Diplomado: Justicia Juvenil Restaurativa - Ministerio de Justicia y del Derecho</li>
+									<li>Diplomado: Formacion de promotores y promotoras para la corresponsabilidad y equidad entre los generos - Universidad de Caldas</li>
+									<li>Diplomado: Gestion del talento humano - Politecnico de Colombia</li>
+								</ul>
+							</details>
+
+							<details class="edu-group">
+								<summary>2023 - 5 formaciones</summary>
+								<ul>
+									<li>Semillero de investigacion: Semillero de Desarrollo Familiar - Universidad de Caldas</li>
+									<li>Diplomado: Formulacion de proyectos de desarrollo - ESAP</li>
+									<li>Diplomado: Construccion de paz y derechos humanos - ESAP</li>
+									<li>Diplomado: Me cuido activo - Universidad Autonoma de Manizales</li>
+									<li>Diplomado: Gestion de conflictos - Politecnico de Colombia</li>
+								</ul>
+							</details>
+
+							<details class="edu-group">
+								<summary>2022 - 1 formacion</summary>
+								<ul>
+									<li>Asistente: XII Foro Regional sobre Familia (retos y perspectivas) - Vicerrectoria de Proyeccion, Universidad de Caldas</li>
+								</ul>
+							</details>
+
+							<details class="edu-group">
+								<summary>2020 - 2 formaciones</summary>
+								<ul>
+									<li>Diplomado: Gestion integral del servicio al ciudadano - ESAP</li>
+									<li>Diplomado: Habilidades para la vida - Prosperidad Social</li>
+								</ul>
+							</details>
+
+							<details class="edu-group">
+								<summary>2018 - 1 formacion</summary>
+								<ul>
+									<li>Curso: Organizacion de archivos - CINOC</li>
+								</ul>
+							</details>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECCION: RECOMENDACIONES -->
+		<section id="recomendaciones" class="education-section" aria-label="Seccion recomendaciones">
+			<h2 class="section-title">Recomendaciones</h2>
+			<p class="section-subtitle">Referencias laborales y personales para validacion profesional</p>
+
+			<div class="education-list">
+				<article class="education-card">
+					<h3>Referencias laborales</h3>
+					<ul class="edu-main-list" aria-label="Referencias laborales">
+						<li>
+							<p class="edu-title">Jhon Jairo Zuluaga</p>
+							<p class="edu-level">Coordinador de estadistica - ESE Hospital Local San Juan de Dios de Pensilvania</p>
+							<p class="edu-institution">3124405349</p>
+						</li>
+						<li>
+							<p class="edu-title">Isabel Cristina Hernandez Madrid</p>
+							<p class="edu-level">Coordinadora CAF (Psicologa) - Universidad de Caldas</p>
+							<p class="edu-institution">3147987847</p>
+						</li>
+						<li>
+							<p class="edu-title">Maria Clemencia Quintero Castaneda</p>
+							<p class="edu-level">Docente Universidad de Caldas</p>
+							<p class="edu-institution">3115694130</p>
+						</li>
+					</ul>
+				</article>
+
+				<article class="education-card">
+					<h3>Referencia personal y declaracion legal</h3>
+					<ul class="edu-main-list" aria-label="Referencia personal y declaracion legal">
+						<li>
+							<p class="edu-title">Diana Lorena Dominguez Agudelo</p>
+							<p class="edu-level">Colautos Mazda - Administradora de empresas</p>
+							<p class="edu-institution">3113639102</p>
+						</li>
+						<li>
+							<p class="edu-level">Para efectos legales, certifico que toda la informacion registrada en esta hoja de vida es veraz (C.S.T. Art. 62 num. 1, Regimen laboral Colombiano 1057 Legis).</p>
+							<p class="edu-institution">Anyi Paola Dominguez Agudelo - C.C 1192912557 - Tel. 3226986997</p>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<!-- SECCION: FOOTER -->
+	<footer class="site-footer" aria-label="Pie de pagina">
+		<div class="footer-grid">
+			<div class="footer-brand-block">
+				<a class="footer-brand" href="#inicio">Anyi Paola Domínguez Agudelo</a>
+				<p>
+					Profesional del desarrollo familiar enfocado en intervenciones sostenibles, acompañamiento claro y soluciones con impacto comunitario.
+				</p>
+			</div>
+
+			<nav class="footer-links" aria-label="Enlaces rapidos del footer">
+				<h3>Navegacion</h3>
+				<a href="#sobre-mi">Sobre mi</a>
+				<a href="#experiencia">Experiencia</a>
+				<a href="#proyectos">Proyectos</a>
+				<a href="#certificaciones">Certificaciones</a>
+				<a href="#recomendaciones">Recomendaciones</a>
+				<a href="#educacion">Educacion</a>
+			</nav>
+
+			<div class="footer-contact">
+				<h3>Contacto</h3>
+				<a href="mailto:anyipaoagu16@gmail.com">anyipaoagu16@gmail.com</a>
+				<a href="tel:+573217816922">+57 3226986997</a>
+				<div class="footer-socials" aria-label="Redes del footer">
+					<a href="#" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+					<a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+					<a href="#" aria-label="Correo"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>© 2026 Anyi Paola Domínguez Agudelo. Hecho con HTML y CSS.</p>
+			<a href="#inicio">Volver arriba</a>
+		</div>
+	</footer>
+</body>
+</html>
