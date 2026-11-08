@@ -27,11 +27,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css?v=20261108">
 </head>
 <body>
 	<div class="scroll-progress" aria-hidden="true"></div>
-	<div class="sr-only" id="copy-status" aria-live="polite"></div>
 
 	<!-- SECCION: FONDO DECORATIVO -->
 	<div class="page-bg"></div>
@@ -125,12 +124,7 @@
 					<ul class="info-list">
 						<li><i class="bi bi-person-badge-fill info-icon" aria-hidden="true"></i><span>Nombre</span><strong>Anyi Paola Domínguez Agudelo</strong></li>
 						<li><i class="bi bi-geo-alt-fill info-icon" aria-hidden="true"></i><span>País</span><strong>Colombia</strong></li>
-						<li><i class="bi bi-envelope-fill info-icon" aria-hidden="true"></i><span>Email</span>
-							<div class="info-value">
-								<strong>anyipaoagu16@gmail.com</strong>
-								<button type="button" class="copy-btn" data-copy="anyipaoagu16@gmail.com" aria-label="Copiar correo electrónico"><i class="bi bi-copy" aria-hidden="true"></i><span class="copy-label">Copiar</span></button>
-							</div>
-						</li>
+						<li><i class="bi bi-envelope-fill info-icon" aria-hidden="true"></i><span>Email</span><strong><a class="info-link" href="mailto:anyipaoagu16@gmail.com?subject=Contacto%20desde%20tu%20hoja%20de%20vida%20%E2%80%93%20Anyi%20Paola%20Dom%C3%ADnguez&amp;body=Hola%20Anyi%3A%0D%0A%0D%0AVi%20tu%20hoja%20de%20vida%20y%20me%20gustar%C3%ADa%20contactarte%20sobre%20la%20siguiente%20oportunidad%3A%0D%0A%0D%0ACargo%3A%0D%0AEntidad%3A%0D%0ATel%C3%A9fono%20de%20contacto%3A%0D%0A%0D%0ASaludos%2C%0D%0A">anyipaoagu16@gmail.com</a></strong></li>
 						<li><i class="bi bi-telephone-fill info-icon" aria-hidden="true"></i><span>Teléfono</span><strong>+57 3226986997</strong></li>
 						<li><i class="bi bi-translate info-icon" aria-hidden="true"></i><span>Idiomas</span><strong>Español, Inglés (nivel intermedio)</strong></li>
 					</ul>
@@ -752,43 +746,6 @@
 					slides[(current + 1) % slides.length].checked = true;
 				}, 5000);
 			}
-
-			// Botón para copiar el correo.
-			const copyStatus = document.getElementById('copy-status');
-			document.querySelectorAll('.copy-btn').forEach((button) => {
-				const label = button.querySelector('.copy-label');
-				const icon = button.querySelector('i');
-				let timer;
-				button.addEventListener('click', async () => {
-					const text = button.dataset.copy;
-					let ok = false;
-					try {
-						await navigator.clipboard.writeText(text);
-						ok = true;
-					} catch (error) {
-						const field = document.createElement('textarea');
-						field.value = text;
-						field.setAttribute('readonly', '');
-						field.style.position = 'fixed';
-						field.style.opacity = '0';
-						document.body.appendChild(field);
-						field.select();
-						try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
-						field.remove();
-					}
-					label.textContent = ok ? '¡Copiado!' : 'No se pudo copiar';
-					icon.className = ok ? 'bi bi-check2' : 'bi bi-exclamation-circle';
-					button.classList.toggle('is-copied', ok);
-					copyStatus.textContent = ok ? 'Correo copiado al portapapeles' : 'No se pudo copiar el correo';
-					clearTimeout(timer);
-					timer = setTimeout(() => {
-						label.textContent = 'Copiar';
-						icon.className = 'bi bi-copy';
-						button.classList.remove('is-copied');
-						copyStatus.textContent = '';
-					}, 2200);
-				});
-			});
 
 			// Encabezado: fondo al hacer scroll.
 			const header = document.querySelector('.site-header');
