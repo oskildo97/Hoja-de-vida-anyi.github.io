@@ -28,6 +28,8 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<div class="scroll-progress" aria-hidden="true"></div>
+
 	<!-- SECCION: FONDO DECORATIVO -->
 	<div class="page-bg"></div>
 	<div class="page-overlay"></div>
@@ -53,7 +55,7 @@
 		<section class="hero">
 			<div class="hero-text">
 				<p class="hero-kicker">Disponible para nuevas oportunidades</p>
-				<h1>Anyi Paola Domínguez Agudelo</h1>
+				<h1><span class="h1-line">Anyi Paola</span> <span class="h1-line">Domínguez Agudelo</span></h1>
 				<p class="job-title">Profesional en Desarrollo Familiar · Especialista en Gerencia de Proyectos</p>
 				<p class="tagline">Diseño y lidero procesos psicosociales y proyectos sociales que fortalecen a familias y comunidades, con enfoque diferencial, territorial y de derechos.</p>
 
@@ -745,9 +747,62 @@
 
 			// Encabezado: fondo al hacer scroll.
 			const header = document.querySelector('.site-header');
-			const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+			const progress = document.querySelector('.scroll-progress');
+			let ticking = false;
+			const onScroll = () => {
+				ticking = false;
+				header.classList.toggle('is-scrolled', window.scrollY > 24);
+				const max = document.documentElement.scrollHeight - window.innerHeight;
+				progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ')';
+			};
 			onScroll();
-			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener('scroll', () => {
+				if (!ticking) {
+					ticking = true;
+					requestAnimationFrame(onScroll);
+				}
+			}, { passive: true });
+			window.addEventListener('resize', onScroll);
+
+			// Contadores: las cifras suben desde 0 al aparecer en pantalla.
+			const counters = document.querySelectorAll('.stat-card h3');
+			if (!reduceMotion && 'IntersectionObserver' in window) {
+				const countObserver = new IntersectionObserver((entries) => {
+					entries.forEach((entry) => {
+						if (!entry.isIntersecting) return;
+						countObserver.unobserve(entry.target);
+						const el = entry.target;
+						const target = Number(el.dataset.target);
+						const start = performance.now();
+						const duration = 1400;
+						const step = (now) => {
+							const t = Math.min((now - start) / duration, 1);
+							el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3)));
+							if (t < 1) requestAnimationFrame(step);
+						};
+						requestAnimationFrame(step);
+					});
+				}, { threshold: 0.6 });
+				counters.forEach((el) => {
+					const target = parseInt(el.textContent, 10);
+					if (Number.isNaN(target)) return;
+					el.dataset.target = target;
+					el.setAttribute('aria-label', String(target));
+					el.textContent = '0';
+					countObserver.observe(el);
+				});
+			}
+
+			// Brillo que sigue el mouse en las tarjetas (solo en pantallas con mouse).
+			if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+				document.querySelectorAll('.skill-card, .ref-card').forEach((card) => {
+					card.addEventListener('pointermove', (event) => {
+						const rect = card.getBoundingClientRect();
+						card.style.setProperty('--mx', (event.clientX - rect.left) + 'px');
+						card.style.setProperty('--my', (event.clientY - rect.top) + 'px');
+					});
+				});
+			}
 
 			// Menú: resalta la sección visible.
 			const nav = document.querySelector('.top-nav');
